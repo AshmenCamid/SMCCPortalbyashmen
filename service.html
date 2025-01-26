@@ -1,0 +1,228 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - SMCC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+        }
+
+        aside {
+            width: 100px;
+            background-color: #11254D;
+            color: white;
+            padding-top: 20px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 60px;
+            border-radius: 50%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            margin: 20px 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        nav ul li a img {
+            width: 30px;
+            margin-bottom: 5px;
+        }
+
+        main {
+            margin-left: 100px;
+            width: calc(100% - 100px);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .service-title {
+            color: #11254D;  
+            font-size: 24px; 
+            display: flex; 
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            justify-content: flex-start; /* Keep it aligned to the left */
+            margin-bottom: 20px;
+        }
+
+        .service-title img {
+            width: 40px;
+            height: auto;
+        }
+
+        .container {
+            background: #11225A;
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 700px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .container h1 {
+            font-size: 28px;
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+
+        .container h2 {
+            font-size: 22px;
+            color: #FFD700;
+            margin-top: 20px;
+        }
+
+        .container ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .container ul li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .container a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container a:hover {
+            text-decoration: underline;
+        }
+        @media screen and (max-width: 768px) {
+            aside {
+                width: 70px;
+            }
+
+            .logo img {
+                width: 50px;
+            }
+
+            nav ul li a {
+                font-size: 12px;
+            }
+
+            main {
+                margin-left: 70px;
+                width: calc(100% - 70px);
+                padding: 10px;
+            }
+
+            .image-container img {
+                max-width: 60%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            aside {
+                width: 50px;
+            }
+
+            .logo img {
+                width: 40px;
+            }
+
+            nav ul li a {
+                font-size: 10px;
+            }
+
+            main {
+                margin-left: 50px;
+                width: calc(100% - 50px);
+                padding: 5px;
+            }
+
+            .home-title {
+                font-size: 18px;
+            }
+
+            .image-container img {
+                max-width: 90%; 
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <aside>
+        <div class="logo">
+            <img src="Smcc_logo.gif" alt="SMCC Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html"><img src="homeicon.png" alt="Home"> Home</a></li>
+                <li><a href="about.html"><img src="abouticon.png" alt="About SMCC"> About SMCC</a></li>
+                <li><a href="course.html"><img src="courseicon.png" alt="Courses Offered"> Courses Offered</a></li>
+                <li><a href="service.html"><img src="serviceicon.png" alt="Services"> Services</a></li>
+                <li><a href="contact.html"><img src="contactus.png" alt="Contact Us"> Contact Us</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <h2 class="service-title"> 
+            <img src="serviceiconblue.png" alt="Services"> Services
+        </h2>        
+
+        <div class="container">
+            <h1>Saint Michael College of Caraga Services</h1>
+        
+            <h2>Educational Programs</h2>
+            <ul>
+                <li><strong>Basic Education:</strong> Preschool to Senior High School.</li>
+                <li><strong>Higher Education:</strong> Courses in Education, Arts & Sciences, IT, and more.</li>
+                <li><strong>Tech-Voc Courses:</strong> TESDA-accredited programs like F&B Services, Housekeeping. <a href="https://tesdacoursesonline.com/277/saint-michael-college-of-caraga-inc.html" target="_blank">Learn more</a></li>
+            </ul>
+        
+            <h2>Community Services</h2>
+            <ul>
+                <li><strong>Community Radio:</strong> DXSM 89.5 FM educational broadcasts.</li>
+                <li><strong>Religious Activities:</strong> Spiritual growth opportunities.</li>
+                <li><strong>Student Publications:</strong> Campus news through <em>Michaelinian Mirror</em>.</li>
+            </ul>
+        </div>
+    </main>
+
+</body>
+</html>
